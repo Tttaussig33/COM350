@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="screen_padding">16dp</dimen>
+    <dimen name="field_gap">12dp</dimen>
+    <dimen name="section_gap">16dp</dimen>
+    <dimen name="card_padding">12dp</dimen>
+</resources>

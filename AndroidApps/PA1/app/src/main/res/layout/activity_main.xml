@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingTop="60dp"
+        android:paddingBottom="24dp">
+
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_text"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tvInstructions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_conversion"
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupConversions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+
+            <RadioButton
+                android:id="@+id/rbKgToLb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kg_to_lb" />
+
+            <RadioButton
+                android:id="@+id/rbLbToKg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lb_to_kg" />
+
+            <RadioButton
+                android:id="@+id/rbKmToMi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/km_to_mi" />
+
+            <RadioButton
+                android:id="@+id/rbMiToKm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mi_to_km" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnLaunchConverter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/launch_converter" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/screen_padding">
+
+    <!-- To label -->
+    <TextView
+        android:id="@+id/toLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_to"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <!-- To field -->
+    <EditText
+        android:id="@+id/toEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_to"
+        android:inputType="textEmailAddress"
+        android:autofillHints="emailAddress"
+        app:layout_constraintStart_toEndOf="@id/toLabelTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/toLabelTextView"
+        android:layout_marginStart="@dimen/field_gap"/>
+
+    <!-- Subject field -->
+    <EditText
+        android:id="@+id/subjectEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_subject"
+        android:inputType="text"
+        android:autofillHints="emailSubject"
+        app:layout_constraintStart_toStartOf="@id/toLabelTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toEditText"
+        android:layout_marginTop="@dimen/section_gap"/>
+
+    <!-- Message field fills remaining space -->
+    <EditText
+        android:id="@+id/messageEditText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="@string/hint_message"
+        android:inputType="textMultiLine"
+        android:autofillHints="emailBody"
+        android:gravity="top|start"
+        android:minLines="6"
+        app:layout_constraintStart_toStartOf="@id/subjectEditText"
+        app:layout_constraintEnd_toEndOf="@id/subjectEditText"
+        app:layout_constraintTop_toBottomOf="@id/subjectEditText"
+        app:layout_constraintBottom_toTopOf="@id/sendButton"
+        android:layout_marginTop="@dimen/section_gap"
+        android:layout_marginBottom="@dimen/section_gap"/>
+
+    <!-- Send button bottom-center -->
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_send"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

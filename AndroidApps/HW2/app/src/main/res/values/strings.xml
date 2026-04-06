@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ConstraintLayoutDemo</string>
+
+    <string name="to_label">To:</string>
+    <string name="email_hint">Enter email address</string>
+    <string name="subject_hint">Subject</string>
+    <string name="message_hint">Message</string>
+    <string name="send_button">Send</string>
+
+    <string name="title_phone">Samsung Galaxy S6</string>
+    <string name="phone_image_desc">Samsung Galaxy S6 photo</string>
+    <string name="buy_now">BUY NOW</string>
+    <string name="pricing">PRICING</string>
+    <string name="details">DETAILS</string>
+
+</resources>

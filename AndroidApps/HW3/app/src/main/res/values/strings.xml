@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Email Sender</string>
+
+    <string name="label_to">To:</string>
+    <string name="label_subject">Subject</string>
+    <string name="label_message">Message</string>
+
+    <string name="hint_to">Enter email address</string>
+    <string name="hint_subject">Subject</string>
+    <string name="hint_message">Message</string>
+
+    <string name="button_send">Send</string>
+
+    <string name="viewer_title">Preview</string>
+    <string name="empty_value">(empty)</string>
+</resources>

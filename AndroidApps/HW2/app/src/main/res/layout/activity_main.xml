@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+    <!-- To: label -->
+    <TextView
+        android:id="@+id/tvTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/to_label"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Email EditText (fills remaining horizontal space) -->
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/email_hint"
+        android:inputType="textEmailAddress"
+        android:importantForAutofill="yes"
+        android:autofillHints="emailAddress"
+        app:layout_constraintStart_toEndOf="@id/tvTo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvTo"
+        app:layout_constraintBottom_toBottomOf="@id/tvTo"
+        android:layout_marginStart="12dp" />
+
+    <!-- Subject -->
+    <EditText
+        android:id="@+id/etSubject"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/subject_hint"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etEmail"
+        android:layout_marginTop="12dp" />
+
+    <!-- Message (fills available space horizontally + vertically) -->
+    <EditText
+        android:id="@+id/etMessage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="@string/message_hint"
+        android:inputType="textMultiLine"
+        android:gravity="top|start"
+        android:minLines="6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etSubject"
+        app:layout_constraintBottom_toTopOf="@id/btnSend"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Send button centered at bottom -->
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="57dp"
+        android:layout_height="51dp"
+        android:background="@drawable/send_square"
+        android:backgroundTint="@null"
+        android:padding="0dp"
+        android:text="@string/send_button"
+
+        android:textAllCaps="false"
+        android:textColor="#DED3D3"
+        android:tint="@null"
+        app:backgroundTint="@null"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

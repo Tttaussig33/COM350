@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingTop="60dp"
+        android:paddingBottom="24dp">
+
+        <TextView
+            android:id="@+id/tvConversionType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etInputValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/default_hint"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnConvert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/convert"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/btnStartOver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/start_over" />
+
+    </LinearLayout>
+</ScrollView>

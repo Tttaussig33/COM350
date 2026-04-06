@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/title_phone"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Phone image -->
+    <ImageView
+        android:id="@+id/ivPhone"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/phone_image_desc"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/galaxys6"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintBottom_toTopOf="@id/btnBuy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Bottom buttons in a horizontal chain -->
+    <Button
+        android:id="@+id/btnBuy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/buy_now"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:background="@drawable/btn_grey_rect"
+        android:backgroundTint="@null"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnPricing"
+        app:layout_constraintHorizontalChainStyle="spread"
+        android:layout_marginEnd="12dp" />
+
+    <Button
+        android:id="@+id/btnPricing"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/pricing"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:background="@drawable/btn_grey_rect"
+        android:backgroundTint="@null"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnBuy"
+        app:layout_constraintEnd_toStartOf="@id/btnDetails"
+        android:layout_marginEnd="12dp" />
+
+    <Button
+        android:id="@+id/btnDetails"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/details"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:background="@drawable/btn_grey_rect"
+        android:backgroundTint="@null"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnPricing"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

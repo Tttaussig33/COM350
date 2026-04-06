@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">UnitConverter</string>
+    <string name="welcome_text">Welcome to UnitConverter! This app helps you convert between weight and distance units.</string>
+    <string name="select_conversion">Select a conversion type below:</string>
+
+    <string name="kg_to_lb">Kilogram(Kg) to Pounds(lb)</string>
+    <string name="lb_to_kg">Pounds(lb) to Kilograms(Kg)</string>
+    <string name="km_to_mi">Kilometers(Km) to Miles(mi)</string>
+    <string name="mi_to_km">Miles(mi) to Kilometers(Km)</string>
+
+    <string name="launch_converter">Launch Converter</string>
+    <string name="convert">Convert</string>
+    <string name="start_over">Start Over</string>
+    <string name="default_hint">Enter a value</string>
+</resources>
