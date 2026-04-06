@@ -1,16 +1,6 @@
 # macOS
 .DS_Store
 
-# Gradle
-.gradle/
-**/.gradle/
-
-# Build outputs
-build/
-**/build/
-out/
-**/out/
-
 # Android Studio / IntelliJ
 .idea/
 *.iml
@@ -19,16 +9,29 @@ captures/
 .externalNativeBuild/
 .cxx/
 
+# Gradle
+.gradle/
+**/.gradle/
+wrapper/dists/
+**/wrapper/dists/
+
+# Build outputs
+build/
+**/build/
+out/
+**/out/
+
 # Caches
 caches/
 **/caches/
 
-# Logs
+# Logs / compiled files
 *.log
-
-# Kotlin / Java compiled files
 *.class
 
-# Misc
+# Python / notebooks
 __pycache__/
 .ipynb_checkpoints/
+*.pyc
+.venv/
+venv/
