@@ -1,37 +1,15 @@
-# macOS
-.DS_Store
-
-# Android Studio / IntelliJ
-.idea/
 *.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
 local.properties
-captures/
-.externalNativeBuild/
-.cxx/
-
-# Gradle
-.gradle/
-**/.gradle/
-wrapper/dists/
-**/wrapper/dists/
-
-# Build outputs
-build/
-**/build/
-out/
-**/out/
-
-# Caches
-caches/
-**/caches/
-
-# Logs / compiled files
-*.log
-*.class
-
-# Python / notebooks
-__pycache__/
-.ipynb_checkpoints/
-*.pyc
-.venv/
-venv/
