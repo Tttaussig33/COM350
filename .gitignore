@@ -13,3 +13,16 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# Gradle daemon logs (change while IDE/build runs)
+**/daemon/**/*.out.log
+
+# Project-local Gradle user home (caches contain 100MB+ jars; never commit)
+AndroidApps/First_Android_App/caches/
+AndroidApps/First_Android_App/daemon/
+
+# Gradle wrapper downloads (re-fetched by ./gradlew; do not commit)
+AndroidApps/First_Android_App/wrapper/dists/
+
+# Android Studio / IntelliJ (machine-specific)
+.idea/

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PA2 Library</string>
+    <string name="book_image">Book image</string>
+    <string name="title_hint">Enter title</string>
+    <string name="author_hint">Enter author</string>
+    <string name="image_id_hint">Enter image id</string>
+    <string name="update_book">Update Book</string>
+    <string name="delete_book">Delete Book</string>
+    <string name="display_title">Title: %1$s</string>
+    <string name="display_author">Author: %1$s</string>
+</resources>
