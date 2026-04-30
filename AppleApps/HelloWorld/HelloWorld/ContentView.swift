@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+    
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
@@ -16,6 +17,7 @@ struct ContentView: View {
             Text("Hello, world!")
                 .font(.largeTitle)
                 .foregroundStyle(<#T##style: ShapeStyle##ShapeStyle#>)
+            
         }
         .padding()
     }
