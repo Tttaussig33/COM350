@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarNewStock"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:title="Add New Stock"
+        android:titleTextColor="@android:color/white"
+        app:title="Add New Stock" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <EditText
+            android:id="@+id/editTextSymbol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Stock Symbol, ex: AAPL"
+            android:inputType="textCapCharacters" />
+
+        <EditText
+            android:id="@+id/editTextCompanyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Company Name, ex: Apple Inc."
+            android:inputType="textCapWords" />
+
+        <Button
+            android:id="@+id/buttonSaveStock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Save Stock" />
+
+    </LinearLayout>
+
+</LinearLayout>

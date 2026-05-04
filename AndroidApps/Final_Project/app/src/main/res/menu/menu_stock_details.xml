@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/actionRefreshData"
+        android:title="Refresh Data"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/actionVisitStockPage"
+        android:title="Visit Stock Page"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/actionDeleteStock"
+        android:title="Delete Stock"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/actionExitDetails"
+        android:title="Exit"
+        app:showAsAction="never" />
+
+</menu>
